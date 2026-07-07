@@ -180,7 +180,7 @@ Each model reports:
 - [ ] Social media sentiment integration for crypto (Reddit/Twitter)
 - [ ] Explore (cautiously) sequence models only if the lightweight baseline shows a clear ceiling
 - [ ] 
-## Web3 Extension: On-chain Market Intelligence
+### Web3 Extension: On-chain Market Intelligence
 - [ ] Add Ethereum / DeFi asset coverage
 - [ ] Use the Graph to query on-chain activity from indexed subgraphs
 - [ ] Combine on-chain metrics with news sentiment and market price data
