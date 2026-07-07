@@ -136,66 +136,66 @@ Each model reports:
 
 ## 🗺️ Roadmap
 
-**V1 (current)**
+### V1 (Current): Core AI/Data Pipeline
+
 - [ ] Price + news ingestion pipeline for equities, crypto, futures (gold + crude oil)
 - [ ] LLM sentiment classification with structured output (score + key drivers)
 - [ ] PostgreSQL feature store
 - [ ] Three independent scikit-learn baseline models
-- [ ] Dashboard with sentiment summary, prediction, confidence, backtest accuracy
+- [ ] Dashboard with sentiment summary, prediction, confidence, and backtest accuracy
 
-**V1.1**
+### V1.1: Asset Expansion & Model Comparison
+
 - [ ] Extend equities to 15 tickers: add 5 European stocks (Rheinmetall, BAE Systems, ASML, LVMH, SAP)
 - [ ] Extend futures coverage: Silver, Natural Gas, Copper
-- [ ] Evaluate non-English news sources for European equities with sparse English coverage (e.g. Rheinmetall, SAP)
-- [ ] Model comparison: Logistic Regression vs. Random Forest per asset class
+- [ ] Evaluate non-English news sources for European equities with sparse English coverage
+- [ ] Compare Logistic Regression vs. Random Forest per asset class
 
-## V2 (Product Evolution)
+### V2: Product Evolution
 
-### User Accounts & Personalization
+#### User Accounts & Personalization
 - [ ] User authentication (Better Auth / Firebase Authentication)
 - [ ] Personalized watchlists for stocks, cryptocurrencies, and commodities
 - [ ] Save favorite assets and custom watchlist groups
 - [ ] Persistent user preferences and dashboard settings
 
-### Portfolio Tracking
+#### Portfolio Tracking
 - [ ] Manual portfolio tracking (non-broker connected)
 - [ ] Portfolio-level sentiment and risk overview
 - [ ] Asset allocation visualization
 - [ ] Portfolio heatmap and sector exposure summary
 
-### Notifications
+#### Notifications
 - [ ] Sentiment change alerts
 - [ ] Confidence threshold notifications
 - [ ] Watchlist price & sentiment updates
 - [ ] Daily and weekly market digest emails
 
-### Expanded Market Coverage
-- [ ] Additional US, European, and Asia-Pacific equities
-- [ ] Expanded commodity futures coverage
-- [ ] ETF support
-- [ ] Major forex pairs (EUR/USD, GBP/USD, USD/JPY)
+### V3: Advanced Intelligence & Web3 Extension
 
-## **V3 (exploratory, not committed)**
-- [ ] XGBoost/LightGBM comparison layer
-- [ ] Social media sentiment integration for crypto (Reddit/Twitter)
-- [ ] Explore (cautiously) sequence models only if the lightweight baseline shows a clear ceiling
-  
-### Web3 Extension: On-chain Market Intelligence
-- [ ] Add Ethereum / DeFi asset coverage
-- [ ] Use the Graph to query on-chain activity from indexed subgraphs
-- [ ] Combine on-chain metrics with news sentiment and market price data
-- [ ] Build token-level risk and sentiment dashboards
-- [ ] Compare off-chain news sentiment with on-chain behavioral signals
-### Engineering Improvements
-- [ ] Background data ingestion jobs
-- [ ] Caching layer (Redis)
-- [ ] Scheduled market updates
-- [ ] Improved API abstraction and modular data providers
-### AI Market Intelligence
+#### Advanced Market Intelligence
 - [ ] Personalized daily market briefings
 - [ ] Asset-specific AI research summaries
 - [ ] Multi-asset comparison reports (e.g. NVIDIA vs AMD, Gold vs Bitcoin)
 - [ ] Historical sentiment timeline and trend analysis
+
+#### Advanced ML
+- [ ] XGBoost / LightGBM comparison layer
+- [ ] Social media sentiment integration for crypto (Reddit / X)
+- [ ] Explore sequence models only if lightweight baselines reach a clear performance ceiling
+
+#### Web3 / On-chain Market Intelligence
+- [ ] Add Ethereum / DeFi asset coverage
+- [ ] Use The Graph to query on-chain activity from indexed subgraphs
+- [ ] Combine on-chain metrics with news sentiment and market price data
+- [ ] Build token-level risk and sentiment dashboards
+- [ ] Compare off-chain news sentiment with on-chain behavioral signals
+
+#### Engineering Improvements
+- [ ] Background data ingestion jobs
+- [ ] Caching layer (Redis)
+- [ ] Scheduled market updates
+- [ ] Improved API abstraction and modular data providers
 
 **Explicitly out of scope for this project:**
 LSTMs/transformer fine-tuning for price prediction, high-frequency trading, complex backtesting frameworks, portfolio optimization. These are high-effort, low-credibility additions for a project whose value proposition is pipeline quality and interpretable signal — not trading performance.
