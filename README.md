@@ -191,6 +191,13 @@ Each model reports:
 - [ ] XGBoost/LightGBM comparison layer
 - [ ] Social media sentiment integration for crypto (Reddit/Twitter)
 - [ ] Explore (cautiously) sequence models only if the lightweight baseline shows a clear ceiling
+- [ ] 
+## Web3 Extension: On-chain Market Intelligence
+- [ ] Add Ethereum / DeFi asset coverage
+- [ ] Use the Graph to query on-chain activity from indexed subgraphs
+- [ ] Combine on-chain metrics with news sentiment and market price data
+- [ ] Build token-level risk and sentiment dashboards
+- [ ] Compare off-chain news sentiment with on-chain behavioral signals
 
 **Explicitly out of scope for this project:**
 LSTMs/transformer fine-tuning for price prediction, high-frequency trading, complex backtesting frameworks, portfolio optimization. These are high-effort, low-credibility additions for a project whose value proposition is pipeline quality and interpretable signal — not trading performance.
