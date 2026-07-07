@@ -175,7 +175,7 @@ Each model reports:
 - [ ] ETF support
 - [ ] Major forex pairs (EUR/USD, GBP/USD, USD/JPY)
 
-## V3 (exploratory, not committed)**
+## **V3 (exploratory, not committed)**
 - [ ] XGBoost/LightGBM comparison layer
 - [ ] Social media sentiment integration for crypto (Reddit/Twitter)
 - [ ] Explore (cautiously) sequence models only if the lightweight baseline shows a clear ceiling
