@@ -163,12 +163,6 @@ Each model reports:
 - [ ] Asset allocation visualization
 - [ ] Portfolio heatmap and sector exposure summary
 
-### AI Market Intelligence
-- [ ] Personalized daily market briefings
-- [ ] Asset-specific AI research summaries
-- [ ] Multi-asset comparison reports (e.g. NVIDIA vs AMD, Gold vs Bitcoin)
-- [ ] Historical sentiment timeline and trend analysis
-
 ### Notifications
 - [ ] Sentiment change alerts
 - [ ] Confidence threshold notifications
@@ -181,12 +175,6 @@ Each model reports:
 - [ ] ETF support
 - [ ] Major forex pairs (EUR/USD, GBP/USD, USD/JPY)
 
-### Engineering Improvements
-- [ ] Background data ingestion jobs
-- [ ] Caching layer (Redis)
-- [ ] Scheduled market updates
-- [ ] Improved API abstraction and modular data providers
-
 **V3 (exploratory, not committed)**
 - [ ] XGBoost/LightGBM comparison layer
 - [ ] Social media sentiment integration for crypto (Reddit/Twitter)
@@ -198,6 +186,16 @@ Each model reports:
 - [ ] Combine on-chain metrics with news sentiment and market price data
 - [ ] Build token-level risk and sentiment dashboards
 - [ ] Compare off-chain news sentiment with on-chain behavioral signals
+### Engineering Improvements
+- [ ] Background data ingestion jobs
+- [ ] Caching layer (Redis)
+- [ ] Scheduled market updates
+- [ ] Improved API abstraction and modular data providers
+### AI Market Intelligence
+- [ ] Personalized daily market briefings
+- [ ] Asset-specific AI research summaries
+- [ ] Multi-asset comparison reports (e.g. NVIDIA vs AMD, Gold vs Bitcoin)
+- [ ] Historical sentiment timeline and trend analysis
 
 **Explicitly out of scope for this project:**
 LSTMs/transformer fine-tuning for price prediction, high-frequency trading, complex backtesting frameworks, portfolio optimization. These are high-effort, low-credibility additions for a project whose value proposition is pipeline quality and interpretable signal — not trading performance.
