@@ -25,8 +25,9 @@ This cross-asset comparison is the core analytical contribution of the project �
 | **US Equities** | 10 NASDAQ-listed stocks | Dense news coverage, clear earnings-driven sentiment spikes |
 | **Crypto** | BTC, ETH, 1 stablecoin | 24/7 markets, sentiment sourced from both news and social media |
 | **Commodity Futures** | Gold (GC), Crude Oil (CL) | Macro-driven, distinct news structure (Fed policy, OPEC+, inventory reports) |
+| **European Equities** *(V1.1)* | Rheinmetall (RHM.DE), BAE Systems (BA.L), ASML (ASML.AS), LVMH (MC.PA), SAP (SAP.DE) | Cross-sector spread (defense, semiconductors, luxury, software) with varying English-language news density — a natural test case for sentiment coverage quality |
 
-*Planned V1.1 extension: Silver, Natural Gas, Copper (see [Roadmap](#-roadmap)).*
+*Planned V1.1 extension: 5 European equities (Rheinmetall, BAE Systems, ASML, LVMH, SAP), plus Silver, Natural Gas, Copper (see [Roadmap](#-roadmap)).*
 
 ---
 
@@ -143,8 +144,9 @@ Each model reports:
 - [ ] Dashboard with sentiment summary, prediction, confidence, backtest accuracy
 
 **V1.1**
+- [ ] Extend equities to 15 tickers: add 5 European stocks (Rheinmetall, BAE Systems, ASML, LVMH, SAP)
 - [ ] Extend futures coverage: Silver, Natural Gas, Copper
-- [ ] Extend equities to 15 tickers, add EU/other global equities
+- [ ] Evaluate non-English news sources for European equities with sparse English coverage (e.g. Rheinmetall, SAP)
 - [ ] Model comparison: Logistic Regression vs. Random Forest per asset class
 
 **V2 (exploratory, not committed)**
@@ -175,4 +177,5 @@ FeatherQuant is a research and portfolio project. It does not constitute financi
 
 ## 👤 Author
 
-Built by Coral — background in environmental sociology (PhD) transitioning into software/AI engineering, with a research-driven approach to data-heavy product design.
+Built by Coral — an environmental sociology PhD transitioning into software/AI engineering, with a research-driven approach to data-heavy product design.
+
