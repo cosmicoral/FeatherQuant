@@ -69,12 +69,18 @@ This cross-asset comparison is the core analytical contribution of the project �
    │  Futures — trained independently)  │
    └──────────────────┬─────────────────┘
                        ▼
-   ┌───────────────────────────────────┐
-   │        Dashboard (Frontend)        │
-   │  sentiment summary · confidence ·  │
-   │  predicted direction · key drivers │
-   │  · backtest accuracy               │
-   └───────────────────────────────────┘
+  ┌───────────────────────────────────┐
+│      FastAPI Prediction API        │
+│  assets · sentiment · predictions  │
+│  drivers · model performance       │
+└──────────────────┬────────────────┘
+                   ▼
+┌───────────────────────────────────┐
+│   Next.js / TypeScript Frontend    │
+│ sentiment · confidence · drivers   │
+│ watchlists · charts · backtests    │
+└───────────────────────────────────┘        
+ 
 ```
 
 ---
@@ -100,15 +106,15 @@ Each model reports:
 
 ## 🛠️ Tech Stack
 
-- **Backend:** Python
+- **Frontend:** Next.js, React, TypeScript
+- **Backend / API:** Python, FastAPI
 - **Data Layer:** PostgreSQL (sentiment + price + feature store)
 - **Market Data:** Alpha Vantage / Polygon.io / yfinance (equities), CoinGecko / Binance API (crypto), Alpha Vantage / Nasdaq Data Link (futures)
 - **News & Sentiment Sources:** NewsAPI, Finnhub News (equities); CryptoPanic API + social sentiment (crypto); EIA + FRED (futures macro context)
-- **LLM Sentiment Engine:** OpenAI GPT-4o / Gemini (structured sentiment classification + driver extraction)
-- **ML:** scikit-learn (Logistic Regression, Random Forest)
-- **Dashboard:** [React / Vite — to be finalized]
-- **Deployment:** [Render / Vercel — to be finalized]
-
+- **LLM Sentiment Engine:** OpenAI / Gemini (structured sentiment classification + key-driver extraction)
+- **Machine Learning:** scikit-learn (Logistic Regression, Random Forest)
+- **Visualization:** Recharts / lightweight React charting components
+- **Deployment:** Vercel (Next.js frontend) + Render / Railway (FastAPI backend) + managed PostgreSQL
 ---
 
 ## 📈 Dashboard (Planned Views)
